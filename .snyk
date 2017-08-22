@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - phantomjs-prebuilt > extract-zip > debug > ms:
+        patched: '2017-08-22T16:11:30.284Z'
+  'npm:ws:20160920':
+    - camp > socket.io > socket.io-client > ws:
+        patched: '2017-08-22T16:11:30.284Z'
