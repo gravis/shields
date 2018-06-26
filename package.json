@@ -21,11 +21,11 @@
     "pdfkit": "~0.7.1",
     "phantomjs-prebuilt": "~2.1.7",
     "es6-promise": "~2.1.0",
-    "request": "~2.55.0",
+    "request": "~2.81.0",
     "redis": "~1.0.0",
     "camp": "~16.0.0",
     "semver": "~4.3.3",
-    "bower": "~1.4.1",
+    "bower": "~1.7.5",
     "promise": "~7.0.0",
     "chrome-web-store-item-property": "^1.1.2"
   },
