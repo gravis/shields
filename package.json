@@ -2,7 +2,12 @@
   "name": "gh-badges",
   "version": "1.1.2",
   "description": "GitHub badges implemented in SVG.",
-  "keywords": ["GitHub", "badge", "SVG", "image"],
+  "keywords": [
+    "GitHub",
+    "badge",
+    "SVG",
+    "image"
+  ],
   "homepage": "http://shields.io",
   "bugs": {
     "url": "https://github.com/badges/shields/issues",
@@ -27,7 +32,8 @@
     "semver": "~4.3.3",
     "bower": "~1.4.1",
     "promise": "~7.0.0",
-    "chrome-web-store-item-property": "^1.1.2"
+    "chrome-web-store-item-property": "^1.1.2",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "ass": "~0.0.6",
@@ -35,9 +41,13 @@
     "mocha": "~1.14.0"
   },
   "scripts": {
-    "test": "mocha -R spec test.js"
+    "test": "mocha -R spec test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "bin": { "badge": "./gh-badge.js" },
+  "bin": {
+    "badge": "./gh-badge.js"
+  },
   "files": [
     "badge.js",
     "README.md",
@@ -49,5 +59,8 @@
     "lru-cache.js",
     "logo"
   ],
-  "engines": { "node": "0.10.x" }
+  "engines": {
+    "node": "0.10.x"
+  },
+  "snyk": true
 }
